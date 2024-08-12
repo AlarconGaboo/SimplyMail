@@ -1,0 +1,72 @@
+body {
+    background-color: #3a0a5d; /* Color morado oscuro */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: "Edu AU VIC WA NT Hand", cursive;
+}
+
+.container {
+    width: 80%; /* Ajustar el ancho del contenedor */
+    max-width: 600px; /* Establecer un máximo ancho para el recuadro */
+    padding: 20px; /* Espacio alrededor del recuadro */
+}
+
+.email-form {
+    background-color: rgba(0, 0, 0, 0.8); /* Color negro con transparencia */
+    padding: 20px; /* Espacio interno del recuadro */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    color: #fff; /* Color de texto blanco */
+}
+
+h2 {
+    text-align: center; /* Centrar el título */
+    margin-bottom: 20px; /* Espacio debajo del título */
+    font-size: 1.5rem; /* Tamaño del texto del título */
+}
+
+label {
+    display: block; /* Mostrar las etiquetas como bloques */
+    margin-bottom: 5px; /* Espacio debajo de las etiquetas */
+    font-weight: bold; /* Negrita para las etiquetas */
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: calc(100% - 22px); /* Ajustar el ancho para que no se desborde */
+    padding: 10px; /* Espacio interno en los campos de texto */
+    margin-bottom: 15px; /* Espacio debajo de los campos de texto */
+    border: 1px solid #ccc; /* Borde de los campos de texto */
+    border-radius: 5px; /* Bordes redondeados */
+    background-color: #fff; /* Fondo blanco para los campos de texto */
+}
+
+textarea {
+    resize: vertical; /* Permitir el redimensionamiento vertical del área de texto */
+}
+
+.cc-emails {
+    display: grid; /* Usar un grid para los campos de CC */
+    grid-template-columns: repeat(3, 1fr); /* Tres columnas */
+    gap: 10px; /* Espacio entre los campos de CC */
+}
+
+button {
+    background-color: #28a745; /* Botón verde */
+    color: white; /* Texto blanco en el botón */
+    border: none;
+    padding: 10px 20px; /* Espacio interno del botón */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambiar el cursor al pasar sobre el botón */
+    font-size: 1rem; /* Tamaño del texto del botón */
+    display: block; /* Hacer que el botón ocupe una línea completa */
+    margin: 0 auto; /* Centrar el botón horizontalmente */
+}
+
+button:hover {
+    background-color: #218838; /* Color más oscuro en hover */
+}

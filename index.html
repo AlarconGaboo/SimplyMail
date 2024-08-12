@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SimplyMail - Enviar Correo</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Edu+VIC+WA+NT+Beginner:wght@400..700&family=Righteous&family=Work+Sans:ital,wght@0,801;1,801&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="email-form">
+        <h2>SimplyMail</h2>
+        <label for="to">PARA:</label>
+        <input type="email" id="to" placeholder="correo@ejemplo.com" />
+
+        <label for="subject">TITULO:</label>
+        <input type="text" id="subject" placeholder="Asunto del correo" />
+
+        <label for="message">MENSAJE:</label>
+        <textarea
+          id="message"
+          rows="4"
+          placeholder="Escribe tu mensaje aquí"
+        ></textarea>
+
+        <label for="from">DE:</label>
+        <input type="email" id="from" placeholder="tu_correo@ejemplo.com" />
+
+        <label>CC:</label>
+        <div class="cc-emails">
+          <input type="email" class="cc" placeholder="correo1@ejemplo.com" />
+          <input type="email" class="cc" placeholder="correo2@ejemplo.com" />
+          <input type="email" class="cc" placeholder="correo3@ejemplo.com" />
+          <input type="email" class="cc" placeholder="correo4@ejemplo.com" />
+          <input type="email" class="cc" placeholder="correo5@ejemplo.com" />
+          <input type="email" class="cc" placeholder="correo6@ejemplo.com" />
+        </div>
+
+        <button id="send-btn">Enviar</button>
+      </div>
+    </div>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
